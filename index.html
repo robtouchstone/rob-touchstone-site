@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob Touchstone | Certified CliftonStrengths Coach & Keynote Speaker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .heading-font { font-family: 'Playfair Display', sans-serif; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.78), rgba(0,0,0,0.78)), url('hero.jpg');
+            background-size: cover;
+            background-position: 50% 28%;
+            background-attachment: fixed;
+        }
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -2px; left: 0; background-color: #0ea5e9; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #10b981;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3);
+            z-index: 50;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+        .back-to-top.show { opacity: 1; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+
+    <!-- NAVBAR -->
+    <nav class="bg-zinc-950 border-b border-zinc-800 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-gradient-to-br from-sky-400 to-cyan-400 rounded-2xl flex items-center justify-center text-white font-bold text-xl">RT</div>
+                <span class="text-2xl font-semibold tracking-tight heading-font">Rob Touchstone</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#individual" class="nav-link">Coaching</a>
+                <a href="#teams" class="nav-link">Teams</a>
+                <a href="#speaking" class="nav-link">Speaking</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <a href="#calendly" class="bg-emerald-500 hover:bg-emerald-600 text-white px-7 py-3.5 rounded-2xl font-semibold text-sm flex items-center gap-2 transition-all shadow-lg">
+                <i class="fa-solid fa-calendar"></i> FREE 15-MIN CALL
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-bg h-screen flex items-center justify-center text-center pt-16">
+        <div class="max-w-4xl px-6">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-6 py-2 rounded-3xl text-sm mb-8">
+                <span class="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></span>
+                Certified CliftonStrengths Coach • Co-Founder, The Well Coffeehouse • Professor, Lipscomb University
+            </div>
+            <h1 class="heading-font text-6xl md:text-7xl font-bold leading-none tracking-tighter mb-6">Unlock Your Greatest<br>Strengths</h1>
+            <p class="text-2xl md:text-3xl text-zinc-100 max-w-2xl mx-auto mb-10">Personalized CliftonStrengths coaching and powerful keynotes that transform individuals, teams, and organizations.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#calendly" class="bg-emerald-500 hover:bg-emerald-600 text-white px-10 py-5 rounded-3xl font-semibold text-lg flex items-center gap-3 transition-all">
+                    Book Free 15-Min Exploration Call <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#individual" class="border-2 border-white px-10 py-5 rounded-3xl font-semibold text-lg flex items-center justify-center gap-3 hover:bg-white/10 transition-all">
+                    See Coaching Packages
+                </a>
+                <a href="#speaking" class="border-2 border-white px-10 py-5 rounded-3xl font-semibold text-lg flex items-center justify-center gap-3 hover:bg-white/10 transition-all">
+                    See Speaking Options
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="aspect-square rounded-3xl overflow-hidden border-8 border-zinc-800">
+                        <img src="headshot.jpg" alt="Rob Touchstone" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div>
+                    <span class="uppercase tracking-[3px] text-sky-400 text-sm font-medium">Meet Rob Touchstone</span>
+                    <h2 class="heading-font text-5xl font-bold mt-3 mb-8">Certified CliftonStrengths Coach &amp; Keynote Speaker</h2>
+                    <div class="prose prose-invert text-lg leading-relaxed text-zinc-300">
+                        <p>As a Certified CliftonStrengths Coach, I have provided 1-on-1 coaching for hundreds of students, faculty, staff, clients, and couples in discovering and leveraging their unique strengths.</p>
+                        <p>I’ve also delivered numerous workshops for campuses, businesses, organizations, schools, and nonprofits. In addition, with my background in business, church, and higher education as a professor, I'm also a frequent speaker with vast experience delivering keynotes, classes, lectures, sermons, devotional talks, and inspirational messages. I'm happy to consider a wide variety of topics within my expertise to meet your needs.</p>
+                    </div>
+                    <a href="#calendly" class="mt-12 inline-flex items-center gap-3 bg-emerald-500 text-white font-semibold px-8 py-4 rounded-3xl hover:bg-emerald-600 transition">
+                        Start with a Free 15-Min Call <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INDIVIDUAL COACHING -->
+    <section id="individual" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-emerald-900/30 border border-emerald-700 rounded-3xl p-8 mb-12 text-center">
+                <div class="inline-flex items-center gap-3 bg-emerald-600 text-white text-xs font-medium px-5 py-2 rounded-3xl mb-4">
+                    <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                    NEW CLIENTS START HERE
+                </div>
+                <h3 class="text-3xl font-bold text-emerald-100 mb-3">Book a FREE 15-Minute Exploration Call</h3>
+                <p class="text-emerald-100 max-w-md mx-auto mb-8">No pressure, no obligation — just a quick chat to see if CliftonStrengths coaching or my speaking at your event is a good fit for you!</p>
+                <a href="#calendly" class="inline-flex bg-white text-emerald-950 px-10 py-4 rounded-3xl font-semibold items-center gap-3 hover:bg-emerald-100 transition">
+                    <i class="fa-solid fa-calendar-check"></i> Schedule Free Call Now
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Discovery -->
+                <div class="bg-zinc-900 rounded-3xl p-8 card-hover border border-zinc-800">
+                    <div class="text-emerald-400 text-sm font-medium mb-2">ENTRY LEVEL</div>
+                    <h3 class="text-3xl font-semibold mb-3">Discovery Session</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-8">One 60-minute introductory session focused on initial strengths debrief and basic action planning. Includes CliftonStrengths Top 5 assessment ($24.99 value) and digital reports.</p>
+                    <div class="text-5xl font-bold mb-1">$250</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Discovery Session Inquiry" class="block text-center bg-white text-zinc-950 py-4 rounded-2xl font-medium hover:bg-cyan-300 transition">Book Discovery</a>
+                </div>
+                <!-- Growth -->
+                <div class="bg-zinc-900 rounded-3xl p-8 card-hover border border-zinc-800 relative">
+                    <div class="absolute -top-3 right-6 bg-amber-400 text-zinc-950 text-xs font-bold px-4 py-1 rounded-3xl">MOST POPULAR</div>
+                    <div class="text-emerald-400 text-sm font-medium mb-2">DEEP DIVE</div>
+                    <h3 class="text-3xl font-semibold mb-3">Growth Package</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-8">Three 60-minute sessions over 1–2 months. Includes CliftonStrengths Full 34 assessment ($59.99 value).</p>
+                    <div class="text-5xl font-bold mb-1">$650</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Growth Package Inquiry" class="block text-center bg-white text-zinc-950 py-4 rounded-2xl font-medium hover:bg-cyan-300 transition">Choose Growth</a>
+                </div>
+                <!-- Mastery -->
+                <div class="bg-zinc-900 rounded-3xl p-8 card-hover border border-zinc-800">
+                    <div class="text-emerald-400 text-sm font-medium mb-2">TRANSFORMATION</div>
+                    <h3 class="text-3xl font-semibold mb-3">Mastery Package</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-8">Five 60-minute sessions over 2–3 months with advanced strategies. Includes CliftonStrengths Full 34 assessment.</p>
+                    <div class="text-5xl font-bold mb-1">$1,000</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Mastery Package Inquiry" class="block text-center bg-white text-zinc-950 py-4 rounded-2xl font-medium hover:bg-cyan-300 transition">Go for Mastery</a>
+                </div>
+                <!-- Ongoing -->
+                <div class="bg-zinc-900 rounded-3xl p-8 card-hover border border-zinc-800">
+                    <div class="text-emerald-400 text-sm font-medium mb-2">SUSTAINED GROWTH</div>
+                    <h3 class="text-3xl font-semibold mb-3">Ongoing Support</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-8">Flexible monthly sessions (minimum 1 per month).</p>
+                    <div class="text-5xl font-bold mb-1">$250</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Ongoing Support Inquiry" class="block text-center bg-white text-zinc-950 py-4 rounded-2xl font-medium hover:bg-cyan-300 transition">Start Ongoing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM WORKSHOPS -->
+    <section id="teams" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="px-5 py-2 bg-violet-900 text-violet-300 text-xs font-medium rounded-3xl">FOR TEAMS &amp; ORGANIZATIONS</span>
+                <h2 class="heading-font text-5xl font-bold mt-4">Team &amp; Leadership Workshops</h2>
+                <p class="text-zinc-400 mt-3">Virtual or in-person • Flat fees for teams ≤ 50 • $10 per additional member • Assessments extra</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-black rounded-3xl p-8 card-hover">
+                    <h3 class="text-3xl font-semibold mb-4">Starter Workshop</h3>
+                    <p class="text-zinc-400 mb-8 text-sm">90-minute session focused on strengths awareness and basic team alignment.</p>
+                    <div class="text-4xl font-bold">$1,000</div>
+                    <div class="text-xs text-zinc-500">flat fee (≤50 people)</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Starter Workshop Inquiry" class="mt-8 block text-center border border-zinc-700 hover:bg-zinc-800 py-4 rounded-2xl text-sm font-medium">Inquire Now</a>
+                </div>
+                <div class="bg-black rounded-3xl p-8 card-hover">
+                    <h3 class="text-3xl font-semibold mb-4">Team Builder</h3>
+                    <p class="text-zinc-400 mb-8 text-sm">3-hour workshop with interactive exercises and strength pairing.</p>
+                    <div class="text-4xl font-bold">$2,000</div>
+                    <div class="text-xs text-zinc-500">flat fee (≤50 people)</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Team Builder Inquiry" class="mt-8 block text-center border border-zinc-700 hover:bg-zinc-800 py-4 rounded-2xl text-sm font-medium">Inquire Now</a>
+                </div>
+                <div class="bg-black rounded-3xl p-8 card-hover">
+                    <h3 class="text-3xl font-semibold mb-4">Full Immersion</h3>
+                    <p class="text-zinc-400 mb-8 text-sm">5-hour workshop with deep dives into team dynamics and customized strategies.</p>
+                    <div class="text-4xl font-bold">$3,500</div>
+                    <div class="text-xs text-zinc-500">flat fee (≤50 people)</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Full Immersion Inquiry" class="mt-8 block text-center border border-zinc-700 hover:bg-zinc-800 py-4 rounded-2xl text-sm font-medium">Inquire Now</a>
+                </div>
+                <div class="bg-black rounded-3xl p-8 card-hover border border-cyan-500">
+                    <h3 class="text-3xl font-semibold mb-4">Enterprise Custom</h3>
+                    <p class="text-zinc-400 mb-8 text-sm">Multi-session program including executive debriefs (quote-based).</p>
+                    <div class="text-4xl font-bold">From $5,000</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Enterprise Custom Inquiry" class="mt-8 block text-center bg-cyan-400 text-zinc-950 py-4 rounded-2xl font-medium">Get Custom Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPEAKING -->
+    <section id="speaking" class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="px-5 py-2 bg-orange-900 text-orange-300 text-xs font-medium rounded-3xl">KEYNOTES &amp; EVENTS</span>
+                <h2 class="heading-font text-5xl font-bold mt-4">Speaking, Teaching &amp; Workshops</h2>
+                <p class="text-zinc-400 mt-3">Customized coaching or talks for meetings, conferences, training events, schools, retreats, churches, board meetings, corporate events, and more • Travel fee extra if outside Nashville</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-zinc-900 rounded-3xl p-8 card-hover">
+                    <div class="uppercase text-orange-400 text-xs mb-2">20–30 min</div>
+                    <h3 class="text-3xl font-semibold mb-4">Inspirational Message</h3>
+                    <p class="text-zinc-400 text-sm mb-8">Ideal for meetings, churches, or small events. Includes Q&amp;A.</p>
+                    <div class="text-5xl font-bold">$500</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Inspirational Message" class="mt-8 block text-center border border-zinc-700 hover:bg-zinc-800 py-4 rounded-2xl">Book This Talk</a>
+                </div>
+                <div class="bg-zinc-900 rounded-3xl p-8 card-hover">
+                    <div class="uppercase text-orange-400 text-xs mb-2">30–45 min</div>
+                    <h3 class="text-3xl font-semibold mb-4">Keynote</h3>
+                    <p class="text-zinc-400 text-sm mb-8">Customized keynote for conferences or seminars with Q&amp;A.</p>
+                    <div class="text-5xl font-bold">$1,500</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Keynote Booking" class="mt-8 block text-center border border-zinc-700 hover:bg-zinc-800 py-4 rounded-2xl">Book Keynote</a>
+                </div>
+                <div class="bg-zinc-900 rounded-3xl p-8 card-hover">
+                    <div class="uppercase text-orange-400 text-xs mb-2">60–90 min</div>
+                    <h3 class="text-3xl font-semibold mb-4">Premium Keynote</h3>
+                    <p class="text-zinc-400 text-sm mb-8">In-depth breakout or extended session with extended Q&amp;A.</p>
+                    <div class="text-5xl font-bold">$2,500</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Premium Keynote Inquiry" class="mt-8 block text-center border border-zinc-700 hover:bg-zinc-800 py-4 rounded-2xl">Book Premium</a>
+                </div>
+                <div class="bg-zinc-900 rounded-3xl p-8 card-hover border border-orange-400">
+                    <div class="uppercase text-orange-400 text-xs mb-2">MULTI-SESSION</div>
+                    <h3 class="text-3xl font-semibold mb-4">Custom Keynote Experience</h3>
+                    <p class="text-zinc-400 text-sm mb-8">Fully tailored program including keynotes and breakouts.</p>
+                    <div class="text-5xl font-bold">From $3,500</div>
+                    <a href="mailto:robtouchstone@gmail.com?subject=Custom Keynote Experience" class="mt-8 block text-center bg-orange-400 text-zinc-950 py-4 rounded-2xl font-medium">Request Custom Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALENDLY (now at the bottom, less prominent) -->
+    <section id="calendly" class="py-16 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-2xl font-semibold text-center mb-4 text-emerald-100">Schedule Your Free 15-Minute Exploration Call</h3>
+            <p class="text-center text-zinc-400 mb-8 max-w-md mx-auto">Pick a convenient time below. No pressure — just a quick chat to see if this is a good fit.</p>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/rob-touchstone/strengths-explore" style="min-width:320px;height:700px;"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-16">
+                <div class="md:col-span-5">
+                    <h2 class="heading-font text-5xl font-bold mb-6">Let's Connect</h2>
+                    <p class="text-zinc-400 text-lg">Whether you're an individual ready for growth or an organization looking to book a workshop or keynote, I’d love to hear from you.</p>
+                </div>
+                <div class="md:col-span-7 bg-black rounded-3xl p-10">
+                    <form action="https://formspree.io/f/xreykjbd" method="POST" class="space-y-8">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest mb-2">Your Name</label>
+                                <input type="text" name="name" required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-cyan-400">
+                            </div>
+                            <div>
+                                <label class="block text-xs uppercase tracking-widest mb-2">Email</label>
+                                <input type="email" name="email" required class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-cyan-400">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest mb-2">What are you interested in?</label>
+                            <select name="interest" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-cyan-400">
+                                <option>Free 15-Min Exploration Call</option>
+                                <option>Individual Coaching</option>
+                                <option>Team Workshop</option>
+                                <option>Keynote or Speaking Engagement</option>
+                                <option>Custom Enterprise Program</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-widest mb-2">Message / Preferred Dates</label>
+                            <textarea name="message" rows="5" class="w-full bg-zinc-900 border border-zinc-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-cyan-400"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-white text-zinc-950 py-6 rounded-3xl font-semibold text-lg hover:bg-cyan-400 transition">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black py-16 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex justify-center gap-3 mb-6">
+                <div class="w-9 h-9 bg-gradient-to-br from-sky-400 to-cyan-400 rounded-2xl flex items-center justify-center text-white font-bold text-2xl">RT</div>
+            </div>
+            <p class="text-zinc-500 text-sm">© 2026 Rob Touchstone • Certified CliftonStrengths Coach • Nashville, Tennessee</p>
+            <div class="flex justify-center gap-6 mt-6 text-zinc-400">
+                <a href="https://www.linkedin.com/in/rob-touchstone-281159a2" target="_blank" class="hover:text-white flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin text-xl"></i> LinkedIn
+                </a>
+            </div>
+            <p class="text-zinc-600 text-xs mt-8">Built with ❤️ by Grok</p>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="backToTop" class="back-to-top">
+        ↑
+    </button>
+
+    <!-- CALENDLY SCRIPT -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+    <script>
+        // Back to Top visibility
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('show', window.scrollY > 500);
+        });
+
+        // Smooth scroll for all # links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
